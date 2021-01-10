@@ -1,4 +1,4 @@
-# Mikedeejay2-Maven-Repo
+# Mikedeejay2 Maven Repository
 The Maven repository for my code.
 
 ### What is this?
