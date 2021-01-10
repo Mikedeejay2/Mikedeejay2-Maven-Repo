@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>example.example</groupId>
+    <artifactId>example</artifactId>
+    <version>example</version>
+    <packaging>jar</packaging>
+
+    <name>Maven Dependency Example</name>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin> <!-- Plugin to shade in dependency into jar file -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>${project.artifactId}-${project.version}</finalName>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                            <relocations> <!-- Add relocations to move specific dependencies to internal package -->
+                                <relocation>
+                                    <pattern>com.mikedeejay2.mikedeejay2lib</pattern> <!-- Get com.mikedeejay2.mikedeejay2lib -->
+                                    <shadedPattern>${project.groupId}.${project.artifactId}.internal.mikedeejay2lib <!-- Move it to an internal package so no class overrides occur -->
+                                    </shadedPattern>
+                                </relocation>
+                            </relocations>
+                            <!--<outputFile></outputFile> Change output file name if wanted -->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository> <!-- Add repository hosted on Github as a repository -->
+            <id>Mikedeejay2-Maven-Repo</id>
+            <url>https://github.com/Mikedeejay2/Mikedeejay2-Maven-Repo/raw/master/</url> <!-- Notice /raw/ to get the raw data in master -->
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency> <!-- Specify the dependency being used in the Github repository -->
+            <groupId>com.mikedeejay2</groupId> <!-- Group ID of the dependency -->
+            <artifactId>mikedeejay2lib</artifactId> <!-- Artifact ID of the dependency -->
+            <version>1.16.4-SNAPSHOT</version> <!-- Version of the dependency -->
+        </dependency>
+    </dependencies>
+</project>
