@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.mikedeejay2</groupId>
+  <artifactId>mikedeejay2lib</artifactId>
+  <versioning>
+    <versions>
+      <version>1.16.4-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20210110222043</lastUpdated>
+  </versioning>
+</metadata>
