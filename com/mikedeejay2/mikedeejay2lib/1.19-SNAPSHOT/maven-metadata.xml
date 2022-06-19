@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.mikedeejay2</groupId>
+  <artifactId>mikedeejay2lib</artifactId>
+  <version>1.19-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20220619.022704</timestamp>
+      <buildNumber>2</buildNumber>
+    </snapshot>
+    <lastUpdated>20220619022704</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.19-20220619.022656-1</value>
+        <updated>20220619022704</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.19-20220619.022656-1</value>
+        <updated>20220619022704</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>1.19-20220619.022656-1</value>
+        <updated>20220619022704</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>1.19-20220619.022656-1</value>
+        <updated>20220619022704</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
