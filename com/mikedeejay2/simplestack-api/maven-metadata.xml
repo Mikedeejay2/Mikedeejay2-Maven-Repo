@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.mikedeejay2</groupId>
+  <artifactId>simplestack-api</artifactId>
+  <versioning>
+    <versions>
+      <version>2.0.0-DEV-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20230330174818</lastUpdated>
+  </versioning>
+</metadata>
