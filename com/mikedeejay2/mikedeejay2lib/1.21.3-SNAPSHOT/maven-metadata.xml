@@ -3,33 +3,33 @@
   <groupId>com.mikedeejay2</groupId>
   <artifactId>mikedeejay2lib</artifactId>
   <versioning>
-    <lastUpdated>20241111163945</lastUpdated>
+    <lastUpdated>20241120011857</lastUpdated>
     <snapshot>
-      <timestamp>20241111.163945</timestamp>
+      <timestamp>20241120.011857</timestamp>
       <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.21.3-20241111.163945-2</value>
-        <updated>20241111163945</updated>
+        <value>1.21.3-20241120.011857-2</value>
+        <updated>20241120011857</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.21.3-20241111.163945-2</value>
-        <updated>20241111163945</updated>
+        <value>1.21.3-20241120.011857-2</value>
+        <updated>20241120011857</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>1.21.3-20241111.163945-2</value>
-        <updated>20241111163945</updated>
+        <value>1.21.3-20241120.011857-2</value>
+        <updated>20241120011857</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>1.21.3-20241111.163945-2</value>
-        <updated>20241111163945</updated>
+        <value>1.21.3-20241120.011857-2</value>
+        <updated>20241120011857</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
